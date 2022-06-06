@@ -7,8 +7,8 @@
 	<groupId>org.vaadin.addons.flowingcode</groupId>
 	<artifactId>template-addon</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>Template Add-on</name>
-	<description>Template Add-on for Vaadin Flow</description>
+	<name>GitHub Buttons Add-on</name>
+	<description>GitHub Buttons Add-on for Vaadin Flow</description>
 
 	<properties>
         <vaadin.version>23.0.10</vaadin.version>
@@ -36,9 +36,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/FlowingCode/AddonStarter23</url>
-		<connection>scm:git:git://github.com/FlowingCode/AddonStarter23.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/AddonStarter23.git</developerConnection>
+		<url>https://github.com/FlowingCode/GitHubButtons</url>
+		<connection>scm:git:git://github.com/FlowingCode/GitHubButtons.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/GitHubButtons.git</developerConnection>
 		<tag>master</tag>
 	</scm>
 
