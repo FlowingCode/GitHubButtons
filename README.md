@@ -69,6 +69,7 @@ GitHubButton githubButton = new GitHubButton("GoogleMapsAddon", "FlowingCode");
 githubButton.setCount(true);
 githubButton.setTarget("_blank");
 ```
+![gb-basic](https://user-images.githubusercontent.com/30666649/173442893-f53e5de9-60e5-45bc-aeac-92a6b873b6bc.png)
 
 Mdo Github Button
 ```java
@@ -76,6 +77,7 @@ MdoGitHubButton mdoGithubButton = new MdoGitHubButton("GoogleMapsAddon", "Flowin
 mdoGithubButton.setType(MdoGitHubButtonType.FOLLOW);
 mdoGithubButton.setSize(ButtonSize.LARGE);      
 ```
+![gb-mdo](https://user-images.githubusercontent.com/30666649/173442928-ee2eed28-e42a-4185-961c-8d7381a72e89.png)
 
 Ntkme GitHub Button
 ```java
@@ -85,3 +87,4 @@ ntkmeGithubButton.setCount(true);
 ntkmeGithubButton.setSize(ButtonSize.LARGE);
 ntkmeGithubButton.setTarget("_blank");
 ```
+![gb-ntkme](https://user-images.githubusercontent.com/30666649/173442968-a7bb507c-c25d-45ab-85ba-df11104fc0b3.png)
