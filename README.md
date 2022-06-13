@@ -1,22 +1,31 @@
-[![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/template-addon)
-[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/app-layout-addon.svg)](https://vaadin.com/directory/component/template-addon)
-[![Build Status](https://jenkins.flowingcode.com/job/template-addon/badge/icon)](https://jenkins.flowingcode.com/job/template-addon)
+[![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/github-buttons-addon)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/app-layout-addon.svg)](https://vaadin.com/directory/component/github-buttons-addon)
+[![Build Status](https://jenkins.flowingcode.com/job/github-buttons-addon/badge/icon)](https://jenkins.flowingcode.com/job/github-buttons-addon)
 
-# Template Add-on
+# GithHub Buttons Add-on
 
-This is a template project for building new Vaadin 23 addons
+This is the server-side component of [@flowingcode/wc-ngx-github-buttons](https://github.com/FlowingCode/wc-ngx-github-buttons) Web Component. This Web Component is a wrapper of [ngx-github-buttons library](https://github.com/scttcper/ngx-github-buttons).
+The component allows you to create three different types of GitHub Buttons to represent a given user/repository:
+
+- Basic GitHub Button -> only allows to add a STAR button.
+- Mdo GitHub Button -> allows to add STAR, FOLLOW, WATCH & FORK buttons.
+- Ntkme GitHub Button -> allows to add the same as Mdo style plus ISSUE & DOWNLOAD buttons.
 
 ## Features
 
-* List the features of your addon in here
+* Select button type
+* Show count
+* Show button size large (only mdo & ntkme)
+* Show standard icon (only ntkme)
+* Select target type
 
 ## Online demo
 
-[Online demo here](http://addonsv23.flowingcode.com/template)
+[Online demo here](http://addonsv23.flowingcode.com/githubbuttons)
 
 ## Download release
 
-[Available in Vaadin Directory](https://vaadin.com/directory/component/template-addon)
+[Available in Vaadin Directory](https://vaadin.com/directory/component/github-buttons-addon)
 
 ## Building and running demo
 
@@ -27,7 +36,7 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
-See [here](https://github.com/FlowingCode/TemplateAddon/releases)
+See [here](https://github.com/FlowingCode/GitHubButtons/releases)
 
 ## Issue tracking
 
@@ -48,10 +57,31 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-TEMPLATE_ADDON is written by Flowing Code S.A.
+GitHub Buttons Add-on is written by Flowing Code S.A.
 
 # Developer Guide
 
 ## Getting started
 
-Add your code samples in this section
+Basic GitHub Button 
+```java
+GitHubButton githubButton = new GitHubButton("GoogleMapsAddon", "FlowingCode");
+githubButton.setCount(true);
+githubButton.setTarget("_blank");
+```
+
+Mdo Github Button
+```java
+MdoGitHubButton mdoGithubButton = new MdoGitHubButton("GoogleMapsAddon", "FlowingCode");
+mdoGithubButton.setType(MdoGitHubButtonType.FOLLOW);
+mdoGithubButton.setSize(ButtonSize.LARGE);      
+```
+
+Ntkme GitHub Button
+```java
+NtkmeGitHubButton ntkmeGithubButton = new NtkmeGitHubButton("GoogleMapsAddon", "FlowingCode");
+ntkmeGithubButton.setType(NtkmeGitHubButtonType.WATCH);
+ntkmeGithubButton.setCount(true);
+ntkmeGithubButton.setSize(ButtonSize.LARGE);
+ntkmeGithubButton.setTarget("_blank");
+```
