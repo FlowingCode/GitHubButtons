@@ -17,12 +17,12 @@
  * limitations under the License.
  * #L%
  */
-package com.flowingcode.vaadin.addons.template.test;
+package com.flowingcode.vaadin.addons.githubbuttons.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import com.flowingcode.vaadin.addons.DemoLayout;
-import com.flowingcode.vaadin.addons.template.TemplateDemoView;
+import com.flowingcode.vaadin.addons.githubbuttons.GitHubButtonsDemoView;
 import com.vaadin.flow.router.Route;
 import org.junit.Test;
 
@@ -30,7 +30,7 @@ public class LayoutTest {
 
   @Test
   public void testDemoLayout() {
-    Route route = TemplateDemoView.class.getAnnotation(Route.class);
+    Route route = GitHubButtonsDemoView.class.getAnnotation(Route.class);
     assertEquals("com.flowingcode.vaadin.addons.DemoLayout", DemoLayout.class.getName());
     assertEquals(DemoLayout.class, route.layout());
     assertNotEquals("", route.value());
