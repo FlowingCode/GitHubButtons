@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package com.flowingcode.vaadin.addons.template;
+package com.flowingcode.vaadin.addons.githubbuttons;
 
 import com.flowingcode.vaadin.addons.DemoLayout;
 import com.flowingcode.vaadin.addons.GithubLink;
@@ -25,12 +25,14 @@ import com.flowingcode.vaadin.addons.demo.TabbedDemo;
 import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
-@Route(value = "template", layout = DemoLayout.class)
-@GithubLink("https://github.com/FlowingCode/AddonStarter23")
-public class TemplateDemoView extends TabbedDemo {
+@Route(value = "githubbuttons", layout = DemoLayout.class)
+@GithubLink("https://github.com/FlowingCode/GitHubButtons")
+public class GitHubButtonsDemoView extends TabbedDemo {
 
-  public TemplateDemoView() {
-    addDemo(TemplateDemo.class);
+  public GitHubButtonsDemoView() {
+    addDemo(GitHubButtonDemo.class);
+    addDemo(MdoGitHubButtonDemo.class);
+    addDemo(NtkmeGitHubButtonDemo.class);
     setSizeFull();
   }
 }
