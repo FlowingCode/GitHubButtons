@@ -4,7 +4,7 @@
 
 	<groupId>org.vaadin.addons.flowingcode</groupId>
 	<artifactId>github-buttons-addon</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>GitHub Buttons Add-on</name>
 	<description>GitHub Buttons Add-on for Vaadin Flow</description>
 
@@ -36,7 +36,7 @@
 		<url>https://github.com/FlowingCode/GitHubButtons</url>
 		<connection>scm:git:git://github.com/FlowingCode/GitHubButtons.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/GitHubButtons.git</developerConnection>
-		<tag>github-buttons-addon-1.0.0</tag>
+		<tag>master</tag>
 	</scm>
 
 	<dependencyManagement>
