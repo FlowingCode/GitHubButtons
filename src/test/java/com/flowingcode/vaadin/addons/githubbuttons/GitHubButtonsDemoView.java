@@ -22,10 +22,12 @@ package com.flowingcode.vaadin.addons.githubbuttons;
 import com.flowingcode.vaadin.addons.DemoLayout;
 import com.flowingcode.vaadin.addons.GithubLink;
 import com.flowingcode.vaadin.addons.demo.TabbedDemo;
+import com.vaadin.flow.router.ParentLayout;
 import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
-@Route(value = "githubbuttons", layout = DemoLayout.class)
+@ParentLayout(DemoLayout.class)
+@Route("githubbuttons")
 @GithubLink("https://github.com/FlowingCode/GitHubButtons")
 public class GitHubButtonsDemoView extends TabbedDemo {
 
