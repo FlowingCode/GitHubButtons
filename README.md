@@ -2,7 +2,7 @@
 [![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/github-buttons-add-on.svg)](https://vaadin.com/directory/component/github-buttons-add-on)
 [![Build Status](https://jenkins.flowingcode.com/job/GithubButtons-addon/badge/icon)](https://jenkins.flowingcode.com/job/GithubButtons-addon)
 
-# GithHub Buttons Add-on
+# GitHub Buttons Add-on
 
 This is the server-side component of [@flowingcode/wc-ngx-github-buttons](https://github.com/FlowingCode/wc-ngx-github-buttons) Web Component. This Web Component is a wrapper of [ngx-github-buttons library](https://github.com/scttcper/ngx-github-buttons).
 The component allows you to create three different types of GitHub Buttons to represent a given user/repository:
