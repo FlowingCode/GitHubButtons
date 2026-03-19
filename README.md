@@ -20,6 +20,10 @@ The component allows you to create three different types of GitHub Buttons to re
 * Show standard icon (only ntkme)
 * Select target type
 
+## Supported versions
+
+Supported versions: Vaadin 23-25 (add-on version 1.x)
+
 ## Online demo
 
 [Online demo here](http://addonsv23.flowingcode.com/githubbuttons)
