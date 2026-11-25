@@ -1,6 +1,7 @@
 [![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/github-buttons-add-on)
 [![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/github-buttons-add-on.svg)](https://vaadin.com/directory/component/github-buttons-add-on)
 [![Build Status](https://jenkins.flowingcode.com/job/GithubButtons-addon/badge/icon)](https://jenkins.flowingcode.com/job/GithubButtons-addon)
+[![Vaadin Directory](https://img.shields.io/vaadin-directory/v/github-buttons-add-on)](https://vaadin.com/directory/component/github-buttons-add-on)
 [![Javadoc](https://img.shields.io/badge/javadoc-00b4f0)](https://javadoc.flowingcode.com/artifact/org.vaadin.addons.flowingcode/github-buttons-addon)
 
 # GitHub Buttons Add-on
@@ -26,11 +27,33 @@ Supported versions: Vaadin 23-25 (add-on version 1.x)
 
 ## Online demo
 
-[Online demo here](http://addonsv23.flowingcode.com/githubbuttons)
+[Online demo here](https://addonsv25.flowingcode.com/githubbuttons)
 
 ## Download release
 
 [Available in Vaadin Directory](https://vaadin.com/directory/component/github-buttons-add-on)
+
+### Maven install
+
+Add the following dependencies in your pom.xml file:
+
+```xml
+<dependency>
+   <groupId>org.vaadin.addons.flowingcode</groupId>
+   <artifactId>github-buttons-addon</artifactId>
+   <version>X.Y.Z</version>
+</dependency>
+```
+<!-- the above dependency should be updated with latest released version information -->
+
+```xml
+<repository>
+   <id>vaadin-addons</id>
+   <url>https://maven.vaadin.com/vaadin-addons</url>
+</repository>
+```
+
+For SNAPSHOT versions see [here](https://maven.flowingcode.com/snapshots/).
 
 ## Building and running demo
 
@@ -112,3 +135,15 @@ ntkmeGithubButton.setSize(ButtonSize.LARGE);
 ntkmeGithubButton.setTarget("_blank");
 ```
 ![gb-ntkme](https://user-images.githubusercontent.com/30666649/173442968-a7bb507c-c25d-45ab-85ba-df11104fc0b3.png)
+
+## Special configuration when using Spring
+
+By default, Vaadin Flow only includes `com/vaadin/flow/component` to be always scanned for UI components and views. For this reason, the add-on might need to be allowed in order to display correctly. 
+
+To do so, just add `com.flowingcode` to the `vaadin.allowed-packages` property in `src/main/resources/application.properties`, like:
+
+```
+vaadin.allowed-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode
+```
+ 
+More information on Spring scanning configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
